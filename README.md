@@ -17,13 +17,6 @@
 
 ---
 
-## 🖼️ Screenshots
-
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
-
----
-
 ## ✅ Compatibility
 
 - Build 42.16.x
@@ -33,7 +26,7 @@
 
 ## 📦 Installation
 
-1. Subscribe on [Steam Workshop](ПОСИЛАННЯ_НА_ВОРКШОП)
+1. Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3698541938&snr=___)
 2. Launch Project Zomboid
 3. Enable the mod in **Mods** menu
 
