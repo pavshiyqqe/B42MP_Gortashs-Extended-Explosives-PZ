@@ -1,0 +1,105 @@
+module HeavyBombs
+{
+    item MediumPipeBomb
+    {
+        DisplayName           = Medium Pipe Bomb,
+        DisplayCategory       = Explosives,
+        Type                  = Normal,
+        Weight                = 0.5,
+        Icon                  = PipeBomb,
+        WorldStaticModel      = PipeBombFloor,
+        ExplosionPower        = 15,
+        ExplosionRange        = 6,
+        ExplosionSound        = PipeBombExplosion,
+        FirePower             = 4,
+        FireRange             = 3,
+        SoundRadius           = 100,
+        SoundVolume           = 100,
+        ActivatedItem         = true,
+        CanBeActivated        = true,
+        CountDownSound        = PipeBombCountDown,
+    }
+
+    item HeavyPipeBomb
+    {
+        DisplayName           = Heavy Pipe Bomb,
+        DisplayCategory       = Explosives,
+        Type                  = Normal,
+        Weight                = 0.7,
+        Icon                  = PipeBomb,
+        WorldStaticModel      = PipeBombFloor,
+        ExplosionPower        = 25,
+        ExplosionRange        = 10,
+        ExplosionSound        = PipeBombExplosion,
+        FirePower             = 7,
+        FireRange             = 5,
+        SoundRadius           = 130,
+        SoundVolume           = 130,
+        ActivatedItem         = true,
+        CanBeActivated        = true,
+        CountDownSound        = PipeBombCountDown,
+    }
+
+    item UltraPipeBomb
+    {
+        DisplayName           = Ultra Pipe Bomb,
+        DisplayCategory       = Explosives,
+        Type                  = Normal,
+        Weight                = 1.0,
+        Icon                  = PipeBomb,
+        WorldStaticModel      = PipeBombFloor,
+        ExplosionPower        = 40,
+        ExplosionRange        = 16,
+        ExplosionSound        = PipeBombExplosion,
+        FirePower             = 12,
+        FireRange             = 8,
+        SoundRadius           = 180,
+        SoundVolume           = 180,
+        ActivatedItem         = true,
+        CanBeActivated        = true,
+        CountDownSound        = PipeBombCountDown,
+    }
+
+    recipe MakeMediumPipeBomb
+    {
+        SteelTube=1,
+        GunPowder=4,
+        DuctTape=1,
+        WireElectrical=1,
+
+        Result        = MediumPipeBomb,
+        NeedToBeLearn = false,
+        SkillRequired = Electricity:1,
+        Time          = 150,
+        Category      = Explosives,
+    }
+
+    recipe MakeHeavyPipeBomb
+    {
+        SteelTube=1,
+        GunPowder=8,
+        DuctTape=2,
+        WireElectrical=1,
+
+        Result        = HeavyPipeBomb,
+        NeedToBeLearn = false,
+        SkillRequired = Electricity:2,
+        Time          = 200,
+        Category      = Explosives,
+    }
+
+    recipe MakeUltraPipeBomb
+    {
+        SteelTube=2,
+        GunPowder=16,
+        Fertilizer=2,
+        DuctTape=3,
+        WireElectrical=1,
+
+        Result        = UltraPipeBomb,
+        NeedToBeLearn = false,
+        SkillRequired = Electricity:3,
+        Time          = 280,
+        Category      = Explosives,
+    }
+}
