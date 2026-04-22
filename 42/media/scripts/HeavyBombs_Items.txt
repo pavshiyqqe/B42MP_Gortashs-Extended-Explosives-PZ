@@ -1,0 +1,169 @@
+module HeavyBombs
+{
+    item ThermiteBomb
+    {
+        DisplayCategory = Explosives,
+        DisplayName = Inferno Bomb,
+        ItemType = Weapon,
+        Weight = 2.5,
+        Icon = ThermiteBomb,
+        ExplosionPower = 90,
+        ExplosionRange = 8,
+        ExplosionSound = PipeBombExplode,
+        FireStartingEnergy = 80,
+        FireStartingChance = 100,
+        MaxDamage = 0.0,
+        MaxHitcount = 0,
+        MaxRange = 10.0,
+        MinDamage = 0.0,
+        MinimumSwingtime = 1.5,
+        PhysicsObject = Base.PipeBomb,
+        PlacedSprite = constructedobjects_01_32,
+        SwingAmountBeforeImpact = 0.1,
+        SwingAnim = Throw,
+        SwingSound = PipeBombThrow,
+        Swingtime = 1.5,
+        Tooltip = Tooltip_Trap,
+        UseSelf = true,
+        WeaponSprite = PipeBomb,
+        WorldStaticModel = PipeBomb,
+        ConditionMax = 1,
+    }
+
+    item ShockwaveBomb
+    {
+        DisplayCategory = Explosives,
+        DisplayName = Shockwave Bomb,
+        ItemType = Weapon,
+        Weight = 3,
+        Icon = ShockwaveBomb,
+        ExplosionPower = 190,
+        ExplosionRange = 12,
+        ExplosionSound = PipeBombExplode,
+        FireStartingEnergy = 0,
+        FireStartingChance = 0,
+        MaxDamage = 0.0,
+        MaxHitcount = 0,
+        MaxRange = 10.0,
+        MinDamage = 0.0,
+        MinimumSwingtime = 1,
+        PhysicsObject = Base.PipeBomb,
+        PlacedSprite = constructedobjects_01_32,
+        SwingAmountBeforeImpact = 0.1,
+        SwingAnim = Throw,
+        SwingSound = PipeBombThrow,
+        Swingtime = 1,
+        Tooltip = Tooltip_Trap,
+        UseSelf = true,
+        WeaponSprite = PipeBomb,
+        WorldStaticModel = PipeBomb,
+        ConditionMax = 1,
+    }
+
+    item ArmageddonBomb
+    {
+        DisplayCategory = Explosives,
+        DisplayName = Armageddon Bomb,
+        ItemType = Weapon,
+        Weight = 2,
+        Icon = ArmagedonBomb,
+        ExplosionPower = 170,
+        ExplosionRange = 9,
+        ExplosionSound = PipeBombExplode,
+        FireStartingEnergy = 3,
+        FireStartingChance = 5,
+        MaxDamage = 0.0,
+        MaxHitcount = 0,
+        MaxRange = 10.0,
+        MinDamage = 0.0,
+        MinimumSwingtime = 1,
+        PhysicsObject = Base.PipeBomb,
+        PlacedSprite = constructedobjects_01_32,
+        SwingAmountBeforeImpact = 0.1,
+        SwingAnim = Throw,
+        SwingSound = PipeBombThrow,
+        Swingtime = 1,
+        Tooltip = Tooltip_Trap,
+        UseSelf = true,
+        WeaponSprite = PipeBomb,
+        WorldStaticModel = PipeBomb,
+        ConditionMax = 1,
+    }
+
+    craftRecipe Craft Thermite Bomb
+    {
+        timedAction = Making,
+        Time = 300,
+        SkillRequired = Electricity:6,
+        NeedToBeLearn = False,
+        tags = AnySurfaceCraft,
+        category = Explosives,
+        xpAward = Electricity:2,
+        inputs
+        {
+            item 1 tags[Screwdriver] mode:keep,
+            item 1 [Base.ElectronicsScrap],
+            item 1 [Base.Lighter;Base.Matches],
+            item 1 [Base.Wire],
+            item 2 [Base.Aluminum],
+            item 1 [Base.DuctTape],
+            item 50 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 HeavyBombs.ThermiteBomb,
+        }
+    }
+
+    craftRecipe Craft Shockwave Bomb
+    {
+        timedAction = Making,
+        Time = 350,
+        SkillRequired = Electricity:9,
+        NeedToBeLearn = False,
+        tags = AnySurfaceCraft,
+        category = Explosives,
+        xpAward = Electricity:2,
+        inputs
+        {
+            item 1 tags[Screwdriver] mode:keep,
+            item 2 [Base.ElectronicsScrap],
+            item 1 [Base.Battery],
+            item 1 [Base.Wire],
+            item 2 [Base.SmallSheetMetal],
+            item 1 [Base.DuctTape],
+            item 80 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 HeavyBombs.ShockwaveBomb,
+        }
+    }
+
+    craftRecipe Craft Armageddon Bomb
+    {
+        timedAction = Making,
+        Time = 400,
+        SkillRequired = Electricity:7,
+        NeedToBeLearn = False,
+        tags = AnySurfaceCraft,
+        category = Explosives,
+        xpAward = Electricity:3,
+        inputs
+        {
+            item 1 tags[Screwdriver] mode:keep,
+            item 3 [Base.ElectronicsScrap],
+            item 1 [Base.Battery],
+            item 2 [Base.Wire],
+            item 2 [Base.SmallSheetMetal],
+            item 1 [Base.Aluminum],
+            item 1 [Base.DuctTape],
+            item 65 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 HeavyBombs.ArmageddonBomb,
+        }
+    }
+
+}

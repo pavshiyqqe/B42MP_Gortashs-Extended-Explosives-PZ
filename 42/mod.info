@@ -1,0 +1,10 @@
+name=Gortash's Explosives
+id=pasviy_explosives
+author=pavshiy
+description=Gortash's Extended Explosives. Includes powerful craftable bombs — incendiary, shockwave and armageddon. Requires Electricity skill to craft.
+icon=icon.png
+poster=poster.png
+modversion=1.0
+versionMin=42.0
+multiplayer=true
+category=features
