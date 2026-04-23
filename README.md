@@ -19,8 +19,9 @@
 
 ## ✅ Compatibility
 
-- Build 42.16.x
+- Build 42.16.x , 42.17.0
 - Singleplayer
+- Multiplayer [Tested on 42.17.0]
 
 ---
 
